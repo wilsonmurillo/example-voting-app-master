@@ -10,7 +10,7 @@ steps:
     type: git-clone
     repo: '${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}'
     revision: '${{CF_REVISION}}'
-    git: github
+    git: wilsonmurillo
   BuildingMicroServices:
     type: parallel
     stage: build
