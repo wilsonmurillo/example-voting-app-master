@@ -38,7 +38,7 @@ steps:
     image: codefresh/cli
     stage: "Prepare Kubernetes Cluster"
     commands:
-      - codefresh generate image-pull-secret --cluster '${{KUBERNETES_CLUSTER_NAME}}' --namespace ${{KUBERNETES_NAMESPACE}} --registry cfcr
+      - codefresh generate image-pull-secret --cluster '${{KUBERNETES_CLUSTER_NAME}}' --namespace ${{KUBERNETES_NAMESPACE}} --registry gcr
 
 # Replace CF_REPO_OWNER, KUBERNETES_CLUSTER_NAME and KUBERNETES_NAMESPACE in specs files and Deploy Pipelines
 
